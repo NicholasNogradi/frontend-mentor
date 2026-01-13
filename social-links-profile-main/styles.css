@@ -1,0 +1,130 @@
+:root {
+    /* Colors */
+    --grey-900: #141414;
+    --grey-800: #1F1F1F;
+    --grey-700: #333333;
+
+    --green-primary: #C4F82A;
+
+    --white-primary: #FFFFFF;
+
+    /* Typography */
+    --text-preset-1: 600 24px / 150% 0px;
+    --text-preset-2: 400 14px / 150% 0px;
+    --text-preset-2-bold: 700 14px / 150% 0px;
+
+    /* Spacing */
+    --spacing-500: 40px;
+    --spacing-300: 24px;
+    --spacing-200: 16px;
+    --spacing-150: 12px;
+    --spacing-100: 8px;
+    --spacing-50: 4px;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Inter', sans-serif;
+}
+
+body {
+    background: var(--color-grey-900, #141414);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 1440px;
+    height: 960px;
+}
+
+.card {
+    display: flex;
+    flex: 1 0 0;
+    max-width: 384px;
+    flex-direction: column;
+    padding: var(--spacing-500, 40px);
+    align-items: center;
+    gap: var(--spacing-300, 24px);
+    background: var(--grey-800, #1F1F1F);
+    border-radius: 12px;
+}
+
+.profile-pic {
+    width: 88px;
+    height: 88px;
+    border-radius: 50%;
+}
+
+.name-location {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: var(--spacing-50, 4px);
+    align-self: stretch;
+}
+
+.name-location p {
+    color: var(--green-primary, #C4F82A);
+    text-align: center;
+    font-size: 14px;
+    font-weight: 700px;
+    font-style: normal;
+    align-self: stretch;
+}
+
+.name-location h1 {
+    color: var(--white-primary, white);
+    text-align: center;
+    font-size: 24px;
+    font-weight: 700;
+    font-style: normal;
+    line-height: 150%;
+    align-self: stretch;
+}
+
+.bio {
+    color: var(--white-primary, white);
+    text-align: center;
+    font-size: 14px;
+    font-weight: 400;
+    font-style: normal;
+    line-height: 150%;
+    align-self: stretch;
+}
+
+.links {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 16px;
+    align-self: stretch;
+}
+
+.button {
+    display: flex;
+    width: 304px;
+    padding: 12px;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    align-self: stretch;
+    border-radius: 8px;
+    background: var(--grey-700);
+    text-decoration: none;
+    color: var(--white-primary, white);
+    font-size: 14px;
+    font-weight: 700;
+    font-style: normal;
+    line-height: 150%;
+}
+
+.button:hover {
+    background: var(--green-primary,#C4F82A);
+    color: var(--grey-700);
+}
+
+@media  screen and (max-width: 475px) {
+    .card {
+        padding: 24px;
+    }
+}
