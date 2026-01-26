@@ -138,6 +138,10 @@ a {
     gap: var(--spacing-100, 8px);
     border-radius: 29px;
     background: var(--color-cyan-600, #4D96A9);
+
+    &:hover {
+        background: #71C0D4;
+    }
 }
 
 .btn-download span:nth-child(1) {
@@ -173,6 +177,10 @@ a {
     font-style: normal;
     font-weight: 900;
     line-height: 150%;
+
+    &:hover {
+        background: #B18BDD;
+    }
 }
 
 .main-content {
@@ -349,8 +357,19 @@ a {
 
 .sub-footer-content .btn-download {
     background: var(--color-purple-600);
+
+     &:hover {
+        background: #B18BDD;
+    }
 }
 
 .sub-footer-content .btn-download span:nth-child(2) {
     color: var(--color-purple-300, #D9B8FF);
+}
+
+@media  screen and (min-width: 375px) {
+    .combined {
+        
+    }
+    
 }
